@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Task1 extends StatelessWidget {
-  const Task1({super.key});
+class Task2 extends StatelessWidget {
+  const Task2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(
               child: Text(
