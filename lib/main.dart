@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task/myhome_page.dart';
+import 'package:task/task/splash_screen.dart';
 import 'package:task/task/task_1.dart';
 import 'package:task/task/task_2.dart';
 import 'package:sizer/sizer.dart';
