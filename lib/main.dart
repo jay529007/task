@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(
       builder: (context, orientation, deviceType) => const MaterialApp(
-        home: Task2(),
+        home: Task3(),
       ),
     );
   }

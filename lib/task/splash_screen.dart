@@ -11,9 +11,9 @@ class Task3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Image.asset(
-        'splash_screen1.gif',
-        fit: BoxFit.cover,
+        'assets/gif/splash_screen1.gif'
       ),
+
     );
   }
 }
