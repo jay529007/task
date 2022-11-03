@@ -27,12 +27,6 @@ class Task2 extends StatelessWidget {
               ],
             ),
           ),
-
-/*          child: Image.asset(
-            'assets/1.jpg',
-            fit: BoxFit.cover,
-          ),*/
-
           ),
         ),
     );
