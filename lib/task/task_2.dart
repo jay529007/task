@@ -12,21 +12,26 @@ class Task2 extends StatelessWidget {
           body: Container(
             child: Column(
               children: [
-                Center(
+                Container(
                   child: Image.asset(
-                    'assets/4.jpg',
-                    width: 50.w,
+                    'assets/1.jpg',
+                    fit: BoxFit.cover,
                   ),
                 ),
-          Image.asset('assets/5.jpg'),
                 Icon(
-                  Icons.safety_check,
+                  Icons.star,
                   size: 9.h,
-                  color: Colors.cyan,
+                  color: Colors.red,
                 ),
               ],
             ),
           ),
+
+/*          child: Image.asset(
+            'assets/1.jpg',
+            fit: BoxFit.cover,
+          ),*/
+
           ),
         ),
     );
