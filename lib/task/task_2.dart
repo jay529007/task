@@ -9,14 +9,15 @@ class Task2 extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child:Scaffold(
+          appBar: AppBar(),
           body: Container(
             child: Column(
               children: [
                 Container(
-                  child: Image.asset(
-                    'assets/1.jpg',
+                 /* child: Image.asset(
+                    'assets/images/1.jpg',
                     fit: BoxFit.cover,
-                  ),
+                  ),*/
                 ),
                 Icon(
                   Icons.star,
