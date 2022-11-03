@@ -9,7 +9,7 @@ class Task2 extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child:Scaffold(
-          appBar: AppBar(),
+          appBar: AppBar(title: Text("Star"),),
           body: Container(
             child: Column(
               children: [

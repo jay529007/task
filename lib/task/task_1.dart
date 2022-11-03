@@ -7,7 +7,7 @@ class Task1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text("Text"),),
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
