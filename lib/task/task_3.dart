@@ -11,39 +11,41 @@ class Task4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Column(
-        children: [
-          Padding(padding: EdgeInsets.all(1.h)),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Task1()),
-              );
-            },
-            child: Text("Hello World"),
-          ),
-          Padding(padding: EdgeInsets.all(1.h)),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Task2()),
-              );
-            },
-            child: Text("Hello World"),
-          ),
-          Padding(padding: EdgeInsets.all(1.h)),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Task3()),
-              );
-            },
-            child: Text("Wallpaper"),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            Padding(padding: EdgeInsets.all(1.h)),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Task1()),
+                );
+              },
+              child: Text("Hello World"),
+            ),
+            Padding(padding: EdgeInsets.all(1.h)),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Task2()),
+                );
+              },
+              child: Text("Hello World"),
+            ),
+            Padding(padding: EdgeInsets.all(1.h)),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Task3()),
+                );
+              },
+              child: Text("Wallpaper"),
+            ),
+          ],
+        ),
       ),
     );
   }

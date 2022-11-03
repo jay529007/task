@@ -19,6 +19,7 @@ class Task2 extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),*/
                 ),
+
                 Icon(
                   Icons.star,
                   size: 9.h,

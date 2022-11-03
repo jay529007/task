@@ -1,21 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
+import 'package:task/main.dart';
+import 'package:task/myhome_page.dart';
+import 'package:task/task/task_3.dart';
 
-class Task3 extends StatelessWidget {
+
+class Task3 extends StatefulWidget {
   const Task3({Key? key}) : super(key: key);
 
   @override
+  State<Task3> createState() => _Task3State();
+}
+
+
+
+class _Task3State extends State<Task3> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _navigatetohome();
+  }
+
+  _navigatetohome()async{
+    await Future.delayed(Duration(milliseconds: 1500),() {});
+   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> Task4()));
+  }
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        color: Colors.black,
-        child: Image.asset(
+
+      body: Center(
+
+        child: Text("Welcome !",
+        style: TextStyle(fontSize: 40,fontWeight: FontWeight.w500,fontStyle: FontStyle.italic ),),
+
+        /*Image.asset(
           'assets/images/1.jpg',
           height: 10.h,
-        ),
+        ),*/
       ),
     );
   }
