@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task/myhome_page.dart';
+import 'package:task/task/login_screen.dart';
 import 'package:task/task/splash_screen.dart';
 import 'package:task/task/task_1.dart';
 import 'package:task/task/task_2.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(
       builder: (context, orientation, deviceType) => const MaterialApp(
-        home: Task3(),
+        home: Task7(),
       ),
     );
   }

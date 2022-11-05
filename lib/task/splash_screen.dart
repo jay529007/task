@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'package:task/main.dart';
 import 'package:task/myhome_page.dart';
+import 'package:task/task/login_screen.dart';
 import 'package:task/task/task_3.dart';
 
 class Task3 extends StatefulWidget {
@@ -22,7 +23,7 @@ class _Task3State extends State<Task3> {
   _navigatetohome() async {
     await Future.delayed(Duration(milliseconds: 1500), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => Task4()));
+        context, MaterialPageRoute(builder: (context) => Task7()));
   }
 
   Widget build(BuildContext context) {
