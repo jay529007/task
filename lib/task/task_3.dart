@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:task/task/login_screen.dart';
 import 'package:task/task/splash_screen.dart';
 import 'package:sizer/sizer.dart';
 import 'package:task/task/task_1.dart';
 import 'package:task/task/task_2.dart';
 import 'package:task/task/task_4.dart';
 import 'package:task/task/task_5.dart';
+import 'package:task/task/task_6.dart';
+import 'package:task/task/task_7.dart';
+import 'package:task/task/task_8.dart';
 
 class Task4 extends StatelessWidget {
   const Task4({Key? key}) : super(key: key);
@@ -46,7 +50,7 @@ class Task4 extends StatelessWidget {
               },
               child: Text("image"),
             ),
-            Padding(padding: EdgeInsets.all(1.h)),
+          /*  Padding(padding: EdgeInsets.all(1.h)),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -55,7 +59,46 @@ class Task4 extends StatelessWidget {
                 );
               },
               child: Text("Animation"),
+            ),*/
+           /* ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Task7()),
+                );
+              },
+              child: Text("Animation"),
+            ),*/
+            Padding(padding: EdgeInsets.all(1.h)),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Task8()),
+                );
+              },
+              child: Text("media query"),
             ),
+            Padding(padding: EdgeInsets.all(1.h)),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Task9()),
+                );
+              },
+              child: Text("Orientation"),
+            ),
+           /* Padding(padding: EdgeInsets.all(1.h)),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Task10()),
+                );
+              },
+              child: Text("display"),
+            ),*/
           ],
         ),
       ),
