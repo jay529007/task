@@ -4,6 +4,7 @@ import 'package:task/main.dart';
 import 'package:task/myhome_page.dart';
 import 'package:task/task/login_screen.dart';
 import 'package:task/task/task_3.dart';
+import 'package:task/task/todoApp1.dart';
 
 class Task3 extends StatefulWidget {
   const Task3({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class _Task3State extends State<Task3> {
   _navigatetohome() async {
     await Future.delayed(Duration(milliseconds: 1500), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => Task7()));
+        context, MaterialPageRoute(builder: (context) => Home()));
   }
 
   Widget build(BuildContext context) {
