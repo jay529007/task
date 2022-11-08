@@ -92,9 +92,7 @@ class Notesdatabase {
     return result.map((json)=> Note.fromJson(json)).toList();
   }
 
-  Future<int> update(Note note) async{
-
-  }
+  // Future<int> update(Note note) async{  }
 
 
 
