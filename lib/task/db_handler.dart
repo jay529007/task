@@ -47,16 +47,6 @@ class Notesdatabase {
   Future<Note> create(Note note) async{
     final db = await instance.database;
 
-    // final json = note.toJson();
-    // final columns =
-    //     '${NoteFields.title},${NoteFields.description},${NoteFields.createTime}';
-    //
-    // final values =
-    //     '${json[NoteFields.title]},${json[NoteFields.description]},${json[NoteFields.createTime]}';
-    //
-    // final id = await db
-    //      .rawInsert('INSERT INTO table_name ($columns) VALUES ($values)');
-
     final id = await db.insert(tableNote, note.toJson());
     return note.copy(id:id);
 
@@ -84,17 +74,34 @@ class Notesdatabase {
     final db = await instance.database;
 
     final orderBy = '${NoteFields.createTime} ASC';
-    // final result=
-    //     await db.rawQuery('SELECT * FROM $tableNote ORDER BY $orderBy');
+
 
     final result = await db.query(tableNote, orderBy: orderBy);
 
     return result.map((json)=> Note.fromJson(json)).toList();
   }
 
-  // Future<int> update(Note note) async{  }
+  Future<int> rawUpdate(Note note) async{
+    final db = await instance.database;
 
+    return db.update(
+      tableNote,
+      note.toJson(),
+      where: '${NoteFields.id} = ?',
+      whereArgs: [note.id],
+    );
+  }
 
+  Future<int> delete(int id) async{
+    final db = await instance.database;
+
+    return await db.delete(
+      tableNote,
+      where:  '${NoteFields.id} = ?',
+      whereArgs: [id],
+
+    );
+  }
 
   Future close() async {
     final db = await instance.database;
